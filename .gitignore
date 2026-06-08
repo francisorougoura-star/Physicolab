@@ -1,0 +1,39 @@
+# Dépendances
+node_modules/
+/.pnp
+.pnp.js
+.yarn/
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+
+# Éditeurs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de build temporaires
+dist/
+build/
+.out/
+.next/
+
+# Fichiers de cache
+.cache/
+.parcel-cache/

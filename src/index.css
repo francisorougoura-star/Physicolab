@@ -1,0 +1,55 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-main:        #0B1120;
+  --bg-card:        #1E293B;
+  --bg-deep:        #0F172A;
+  --accent:         #3B82F6;
+  --accent-hover:   #2563EB;
+  --text-primary:   #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted:     #64748B;
+  --border:         #1E293B;
+  --border-mid:     #334155;
+  --btn-secondary:  #334155;
+  --btn-sec-hover:  #475569;
+  --danger:         #EF4444;
+  --success:        #10B981;
+  --pedagogic:      #8B5CF6;
+  --pedagogic-bg:   #1E1333;
+  --pedagogic-border: #6D28D9;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+input[type="range"] {
+  height: 4px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+canvas { display: block; }
+
+::-webkit-scrollbar { width: 6px; background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 3px; }
+
+button { font-family: inherit; }
+
+@media (max-width: 768px) {
+  .sim-grid { grid-template-columns: 1fr !important; }
+  .sidebar-label { display: none; }
+}

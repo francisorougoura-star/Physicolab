@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "physiolab",
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
