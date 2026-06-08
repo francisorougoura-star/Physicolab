@@ -1,34 +1,8 @@
 {
   "version": 2,
-  "name": "physiolab",
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "framework": null,
-  "cleanUrls": true,
-  "headers": [
-    {
-      "source": "**/*.@(js|jsx)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    },
-    {
-      "source": "**/*.jsx",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "vite"
 }
